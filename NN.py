@@ -55,10 +55,13 @@ def Neural_Network(X,y,iterations,layers):
         return l_final
 
 ###############################################################################
-layers = 3   
-iterations = 100000
-X = np.array([ [0,1,1],[1,1,1],[1,0,1],[0,0,0]])
-y = np.array([[0,1,1,0]]).T
+layers = 3
+iterations = 10000
+
+X = np.array([ [0,1,1],[1,1,1],[1,0,1],[0,0,0],[0,1,1]])
+
+y = np.array([[0,1,1,0,0]]).T
+
 results = Neural_Network(X,y,iterations,layers)
 print(results)
 
